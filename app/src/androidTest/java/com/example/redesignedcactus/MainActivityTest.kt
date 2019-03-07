@@ -20,4 +20,9 @@ class MainActivityTest {
     fun progressButtonHasText() {
         onView(withId(R.id.progressButton)).check(matches(withText("Increment Progress")))
     }
+
+    @Test
+    fun counterLabelHasDefaultTextOfZero() {
+        onView(withId(R.id.counterLabel)).check(matches(withText("0")))
+    }
 }
